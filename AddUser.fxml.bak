@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="350.0" xmlns:fx="http://javafx.com/fxml" fx:controller="mailprogram.AddUserController">
+  <children>
+    <Label layoutX="14.0" layoutY="14.0" text="Add User" textFill="#4bcdff">
+      <font>
+        <Font size="16.0" />
+      </font>
+    </Label>
+    <Label layoutX="20.0" layoutY="36.0" text="Username"/>
+    <Label layoutX="20.0" layoutY="68.0" text="Password"/>
+    <Label layoutX="20.0" layoutY="100.0" text="Incoming Server"/>
+    <Label layoutX="20.0" layoutY="132.0" text="Outgoing Server"/>
+    <TextField fx:id="usernameField" layoutX="125.0" layoutY="36.0" prefWidth="150.0"/>
+    <PasswordField fx:id="passwordField" layoutX="125.0" layoutY="68.0" prefWidth="150.0"/>
+    <TextField fx:id="incomingField" layoutX="125.0" layoutY="100.0" prefWidth="150.0"/>
+    <TextField fx:id="outgoingField" layoutX="125.0" layoutY="132.0" prefWidth="150.0"/>
+    <Button fx:id="addButton" layoutX="280.0" layoutY="100.0" mnemonicParsing="false" prefWidth="64.0" text="Add"/>
+    <Button fx:id="closeButton" layoutX="280.0" layoutY="132.0" mnemonicParsing="false" prefWidth="64.0" text="Close"/>
+    <ChoiceBox fx:id="incomingPort" layoutX="280.0" layoutY="100.0" prefWidth="64.0"/>
+    <ChoiceBox fx:id="outgoingPort" layoutX="280.0" layoutY="132.0" prefWidth="64.0"/>
+  </children>
+</AnchorPane>
